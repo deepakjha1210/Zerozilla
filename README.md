@@ -27,9 +27,8 @@ N.B The purpose of this assignment is to evaluate your understanding of architec
 
 ## Installation
 
-- Clone this repo: `git clone https://github.com/bhanushalimahesh3/node-rest-api-jwt.git`
+- Clone this repo: `git clone https://github.com/deepakjha1210/Zerozilla.git`
 - Install dependecies: `npm install`
-- Install nodemon: `npm install nodemon -g`
 
 # Endpoints
 
