@@ -1,0 +1,236 @@
+{
+	"info": {
+		"_postman_id": "0b1531e1-419c-4ce3-9b1a-0590efe54495",
+		"name": "Zerozilla",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/clients/updateclient?clientId=1",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZjFlNmY4NzBkZWE5MzhkMDhhMDUwYiIsImlhdCI6MTY3NjgxMzI3NiwiZXhwIjoxNjc2ODE2ODc2fQ.dIux_DUCUF0FLK23T7Aq6Kn5hL8mkORCOn7ECv7WfN4",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/clients/updateclient?clientId=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"clients",
+						"updateclient"
+					],
+					"query": [
+						{
+							"key": "clientId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/users/authenticate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"dinesh@gmail.com\",\r\n    \"password\":\"Test@1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/users/authenticate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"authenticate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/clients/createclient",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZjFlNmY4NzBkZWE5MzhkMDhhMDUwYiIsImlhdCI6MTY3NjgwNDYzMiwiZXhwIjoxNjc2ODA4MjMyfQ.CfajMg-fy0Nj8dZYJVkc6MEn8EO5UdZ7Wa0Tr247Jks",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n         \"clientID\":15,\r\n         \"AgencyId\":\"63f1f5cdeef7c2cefd07126c\",\r\n         \"Name\":\"test15\",\r\n         \"Email\":\"test15@gmail.com\",\r\n         \"PhoneNumber\":9110404987,\r\n         \"totalBill\":550\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/clients/createclient",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"clients",
+						"createclient"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/agency/getmax-bill",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZjFlNmY4NzBkZWE5MzhkMDhhMDUwYiIsImlhdCI6MTY3NjgwODI1MiwiZXhwIjoxNjc2ODExODUyfQ.yePz2MuQIh4DonQI_JCMtZSx6ArMD_X2KYWbQKsh9xY",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/agency/getmax-bill",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"agency",
+						"getmax-bill"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/users/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Deepak\",\r\n    \"email\":\"deepak.jha@gmail.com\",\r\n    \"password\":\"Test@1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/users/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/agency/create-agency",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZjFlNmY4NzBkZWE5MzhkMDhhMDUwYiIsImlhdCI6MTY3NjgxMzU5NywiZXhwIjoxNjc2ODE3MTk3fQ._fn8PmQmBC9XZWGeZHmrocqm5tfthFfiXCEKri3MQZA",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"AgencyId\":5,\r\n   \"Name\":\"Testagency\",\r\n   \"Address1\":\"Test\",\r\n   \"Address2\":\"T24/7\",\r\n   \"State\":\"Haryana\",\r\n   \"City\":\"Gurgoan\",\r\n   \"PhoneNumber\":9110404987\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/agency/create-agency",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"agency",
+						"create-agency"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/agency/create-agency-clients",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZjFlNmY4NzBkZWE5MzhkMDhhMDUwYiIsImlhdCI6MTY3NjgxMzU5NywiZXhwIjoxNjc2ODE3MTk3fQ._fn8PmQmBC9XZWGeZHmrocqm5tfthFfiXCEKri3MQZA",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"AgencyId\":10,\r\n   \"Name\":\"dinesh\",\r\n   \"Address1\":\"soubhagya\",\r\n   \"Address2\":\"T24/7\",\r\n   \"State\":\"Haryana\",\r\n   \"City\":\"Gurgoan\",\r\n   \"PhoneNumber\":9110404987,\r\n   \"clients\":[\r\n      {\r\n         \"clientID\":100,\r\n         \"Name\":\"deepak\",\r\n         \"Email\":\"deepak.jha@gmail.com\",\r\n         \"PhoneNumber\":9110404987,\r\n         \"totalBill\":100\r\n      }\r\n   ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/agency/create-agency-clients",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"agency",
+						"create-agency-clients"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
